@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pendaftaran Klinik Kampus - UNIPDU</title>
+  <style>
+    /* CSS sederhana untuk layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #header, #footer {
+      background-color: #f0f0f0;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+    #content {
+      margin: 20px 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Pendaftaran Klinik Kampus - UNIPDU</h1>
+  <h3>FORMULIR SURVEY DASAR</h3>
+</div>
+
+<div id="content">
+  <form action="submit.html" method="GET">
+    <table>
+      <tr>
+        <td><label for="nama">Nama Lengkap:</label></td>
+        <td><input type="text" id="nama" name="nama" required></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin:</td>
+        <td>
+          <input type="radio" id="lk" name="jenis_kelamin" value="Laki-laki" required>
+          <label for="lk">Laki-laki</label>
+          <input type="radio" id="pr" name="jenis_kelamin" value="Perempuan">
+          <label for="pr">Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Hobi (Pilih 3):</td>
+        <td>
+          <input type="checkbox" id="hobi1" name="hobi" value="Membaca">
+          <label for="hobi1">Membaca</label><br>
+          <input type="checkbox" id="hobi2" name="hobi" value="Olahraga">
+          <label for="hobi2">Olahraga</label><br>
+          <input type="checkbox" id="hobi3" name="hobi" value="Coding">
+          <label for="hobi3">Coding</label><br>
+          <input type="checkbox" id="hobi4" name="hobi" value="Musik">
+          <label for="hobi4">Musik</label><br>
+          <input type="checkbox" id="hobi5" name="hobi" value="Traveling">
+          <label for="hobi5">Traveling</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="kota">Asal Kota:</label></td>
+        <td>
+          <select id="kota" name="kota" required>
+            <option value="">--Pilih Kota--</option>
+            <option value="Jombang">Jombang</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="komentar">Komentar:</label></td>
+        <td><textarea id="komentar" name="komentar" rows="4" cols="30" placeholder="Tulis komentar..."></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="KIRIM DATA (GET)"></td>
+      </tr>
+    </table>
+  </form>
+
+  <h3>Jadwal Dokter</h3>
+  <table>
+    <tr>
+      <th>Hari</th>
+      <th>Jam Praktik</th>
+    </tr>
+    <tr>
+      <td>Senin</td>
+      <td>08:00 - 12:00</td>
+    </tr>
+    <tr>
+      <td>Rabu</td>
+      <td>13:00 - 17:00</td>
+    </tr>
+    <tr>
+      <td>Jumat</td>
+      <td>09:00 - 11:00</td>
+    </tr>
+  </table>
+
+  <h3>Langkah Pendaftaran</h3>
+  <ol>
+    <li>Isi formulir dengan lengkap.</li>
+    <li>Klik tombol "KIRIM DATA (GET)".</li>
+    <li>Tunggu konfirmasi email.</li>
+  </ol>
+</div>
+
+<div id="footer">
+  &copy; 2025 Klinik Kampus UNIPDU
+</div>
+
+</body>
+</html>
