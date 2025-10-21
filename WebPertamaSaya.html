@@ -6,10 +6,22 @@
     <link rel="stylesheet" href="style.css"> <!-- External CSS -->
     <style>
         /* Internal CSS */
-        nav {
-            background-color: #6d76ceb0;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f0ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: white;
             padding: 10px;
-            text-align: center;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: right; /* Menu rata kanan */
         }
 
         nav a {
@@ -19,11 +31,17 @@
             font-weight: bold;
         }
 
+        section img {
+            width: 100%;
+            height: auto;
+        }
+
         #content {
             float: left;
             width: 70%;
             height: 200px;
             border: 1px solid black;
+            box-sizing: border-box;
         }
 
         #sidebar {
@@ -31,13 +49,14 @@
             width: 28%;
             height: 200px;
             border: 1px solid black;
+            box-sizing: border-box;
         }
 
         footer {
             clear: both;
             text-align: center;
+            padding: 10px;
             border-top: 1px solid black;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -52,8 +71,9 @@
         <a href="#">Tentang Kami</a>
     </nav>
 
+    <!-- Gambar Alam -->
     <section>
-        <img src="https://via.placeholder.com/800x200" alt="Gambar Pemandangan" width="100%">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80" alt="Gambar Gunung dan Laut">
     </section>
 
     <main>
@@ -66,24 +86,3 @@
     </footer>
 </body>
 </html>
-
-<head>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #e0f0ff;
-}
-
-header, footer {
-    background-color: white;
-    padding: 10px;
-}
-
-section {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-    </style>
-</head>
